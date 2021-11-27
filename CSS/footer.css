@@ -1,0 +1,45 @@
+/* ******************************************************************************************************************************
+headbar.css stylesheet is used for both the homepage and the blogpost. Therefore it makes sense to have it as a separate css file
+*********************************************************************************************************************************  */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  grid-column: 1 / -1;
+  background-color: #e7e7e7;
+  font-size: 8px;
+}
+
+#copyright {
+  margin-left: 8px;
+}
+
+/* *************************************************************** */
+/* ** media query for medium screen. ** */
+/* *************************************************************** */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  footer {
+    font-size: 12px;
+  }
+
+  #copyright {
+    margin-left: 10px;
+  }
+}
+
+/* *************************************************************** */
+/* ** media query for large screen. ** */
+/* *************************************************************** */
+
+@media (min-width: 901px) {
+  footer {
+    font-size: 18px;
+  }
+
+  #copyright {
+    margin-left: 11px;
+  }
+}

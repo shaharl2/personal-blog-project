@@ -1,0 +1,60 @@
+/* ******************************************************************************************************************************
+headbar.css stylesheet is used for both the homepage and the blogpost. Therefore it makes sense to have it as a separate css file
+*********************************************************************************************************************************  */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.headbar {
+  display: flex;
+  background-color: #e7e7e7;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publisher-name {
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+nav a:link {
+  font-size: 6px;
+  margin-right: 4px;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/* *************************************************************** */
+/* ** media query for medium screen. 2 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .publisher-name {
+    font-size: 15px;
+    color: purple;
+  }
+
+  nav a:link {
+    font-size: 9px;
+    margin-right: 8px;
+  }
+}
+
+/* *************************************************************** */
+/* ** media query for medium screen. 4 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 901px) {
+  .publisher-name {
+    font-size: 20px;
+    color: orange;
+  }
+
+  nav a:link {
+    font-size: 12px;
+    margin-right: 9px;
+  }
+}

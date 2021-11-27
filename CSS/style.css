@@ -1,0 +1,192 @@
+@import "./header.css";
+@import "./footer.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* *************************************************************** */
+/* ** media query for small screen. 1 column grid display ** */
+/* *************************************************************** */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.post {
+  text-align: center;
+}
+
+.post-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.post-subtitle {
+  text-transform: uppercase;
+  color: #b4b4b4;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.teaser-text {
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+  align-self: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #fff;
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+button:hover {
+  color: #788697;
+  background-color: #e0efff;
+}
+
+button:active {
+  font-size: 11px;
+  padding: 3px 7px;
+}
+
+.post-button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0077ff;
+  background-color: #e0efff;
+  transition: background-color 200ms ease-in-out;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.post-button:focus,
+.post-button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+.card-content {
+  padding: 16px 8px 0px 8px;
+}
+
+a:visited {
+  color: black;
+}
+
+nav a:hover {
+  color: #1098ad;
+  font-weight: bold;
+  text-decoration: underline #1098ad;
+}
+
+nav a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* footer {
+  grid-column: 1 / -1;
+  background-color: #e7e7e7;
+  font-size: 8px;
+} */
+
+/* *************************************************************** */
+/* ** media query for medium screen. 2 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin: 0 auto;
+  }
+
+  .post-title {
+    font-size: 22px;
+  }
+
+  .post-subtitle {
+    font-size: 14px;
+  }
+
+  .teaser-text {
+    font-size: 14px;
+  }
+
+}
+
+/* *************************************************************** */
+/* ** media query for large screen. 4 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 901px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin: 0 auto;
+  }
+
+  .post-title {
+    font-size: 24px;
+  }
+
+  .post-subtitle {
+    font-size: 15px;
+  }
+
+  .teaser-text {
+    font-size: 15px;
+  }
+}

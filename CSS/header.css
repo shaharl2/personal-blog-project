@@ -1,0 +1,49 @@
+@import "./headbar.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.cover-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-img {
+  width: 100%;
+}
+
+#blog-name {
+  position: absolute;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  z-index: 100;
+}
+
+/* *************************************************************** */
+/* ** media query for medium screen. 2 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #blog-name {
+    font-size: 24px;
+  }
+}
+
+/* *************************************************************** */
+/* ** media query for medium screen. 4 columns grid display ** */
+/* *************************************************************** */
+
+@media (min-width: 901px) {
+  #blog-name {
+    font-size: 32px;
+  }
+}
